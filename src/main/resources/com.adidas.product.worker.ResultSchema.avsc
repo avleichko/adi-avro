@@ -1,0 +1,31 @@
+{
+  "type": "record",
+  "name": "ResultSchema",
+  "namespace": "com.adidas.product.worker.schema",
+  "fields": [
+    {
+      "name": "id",
+      "type": "string"
+    },
+    {
+      "name": "consumer",
+      "type": "string"
+    },
+    {
+      "name": "millis",
+      "type": "long"
+    },
+    {
+      "name": "jobFlow",
+      "type": "string"
+    },
+    {
+      "name": "jobExecution",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    }
+  ]
+}

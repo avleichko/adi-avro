@@ -1,0 +1,31 @@
+{
+  "type": "record",
+  "name": "WorkerFailure",
+  "namespace": "com.adidas.product.worker.schema",
+  "fields": [
+    {
+      "name": "id",
+      "type": "string"
+    },
+    {
+      "name": "consumer",
+      "type": "string"
+    },
+    {
+      "name": "millis",
+      "type": "long"
+    },
+    {
+      "name": "exception",
+      "type": "string"
+    },
+    {
+      "name": "stacktrace",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "type": "record",
+  "name": "WorkerLaunch",
+  "namespace": "com.adidas.product.worker.schema",
+  "fields": [
+    {
+      "name": "id",
+      "type": "string"
+    },
+    {
+      "name": "brand",
+      "type": "string"
+    },
+    {
+      "name": "consumer",
+      "type": "string"
+    },
+    {
+      "name": "flow",
+      "type": "string"
+    },
+    {
+      "name": "locale",
+      "type": {
+        "type": "array",
+        "items": "string"
+      }
+    }
+  ]
+}
